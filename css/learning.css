@@ -1,0 +1,103 @@
+  /** ----- DESIGN SYSTEM ----- **/
+
+  @font-face {
+    font-family: Feather;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../assets/feather.ttf) format("truetype");
+  }
+
+  h1{
+    color: white!important;
+  }
+
+  .btn{
+    --bs-btn-padding-y: 0.8rem;
+    --bs-btn-padding-x: 1.5rem;
+    --bs-btn-font-size: 1rem;
+    text-transform: capitalize;
+    border-radius: 0.25rem;
+  }
+
+  .btn-primary{
+    background-color: green;
+  }
+
+  .btn-secondary{
+    background-color: white;
+    color: black;
+  }
+
+  
+
+  /** ----- NAVBAR ----- **/
+
+nav{
+    max-height: 60px;
+}
+
+#settings{
+    gap: 0.3em;
+    justify-content: flex-end;
+}
+
+.avatar{
+    border-radius: 50%;
+   width: 6%;
+    overflow: hidden;
+}
+
+.avatar >img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+    /** ----- HERO ----- **/
+
+    #hero{
+        background-color: blueviolet;
+        padding: 0 3em!important;
+    }
+
+    #hero p{
+        color: white;
+        opacity: 0.8;
+    }
+
+    #hero .d-flex.flex-column {
+        /*width: 50%;*/
+        justify-content: center;
+    }
+
+    #hero .container-fluid.d-flex {
+        /*justify-content: space-around;*/
+        gap: 0.5em;
+    }
+
+    /*#heroImg{
+        width: 45%;
+    }*/
+
+    #heroImg > img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /** ------ Features ----- **/
+
+    #features{
+        background-color: antiquewhite;
+    }
+
+    .featureIcon{
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+
+    .featureText p{
+        font-size: 14px;
+    }
