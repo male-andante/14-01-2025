@@ -7,6 +7,73 @@
       src: url(../assets/feather.ttf) format("truetype");
   }
 
+  @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+  .icon {
+    font-family: "Feather";
+    font-style: normal;
+    font-weight: 300;
+    display: inline-block; /* Per garantire che funzioni in linee di testo */
+    line-height: 1;
+}
+
+.iconBell::before{
+    content: "\E91E";
+    font-family: "Feather";
+    font-size: 24px;
+   /* color: #333;
+    margin-right: 5px;*/
+}
+
+.iconCam::before{
+    content: "\E9F7";
+    font-family: "Feather";
+    font-size: 24px;
+   /* color: #333;
+    margin-right: 5px;*/
+}
+
+.iconPeople::before{
+    content: "\E9F6";
+    font-family: "Feather";
+    font-size: 24px;
+   /* color: #333;
+    margin-right: 5px;*/
+}
+
+.iconClock::before{
+    content: "\E939";
+    font-family: "Feather";
+    font-size: 24px;
+   /* color: #333;
+    margin-right: 5px;*/
+}
+
+.iconStats::before{
+    content: "\E91A";
+    font-family: "Feather";
+    font-size: 24px;
+   /* color: #333;
+    margin-right: 5px;*/
+}
+
+.iconBookmark::before{
+    content: "\E924";
+    font-family: "Feather";
+    font-size: 24px;
+   /* color: #333;
+    margin-right: 5px;*/
+}
+
+.iconStar::before{
+    content: "\E9D5";
+    font-family: "Feather";
+    font-size: 24px;
+   /* color: #333;
+    margin-right: 5px;*/
+}
+
+
   h1 {
       color: white !important;
   }
@@ -128,3 +195,96 @@
   .featureText>p {
     font-size: 12px;
   }
+
+
+  /** ------ Recommended ----- **/
+
+  h2{
+    margin-bottom: 1.2em;
+  }
+
+  .arrow{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: antiquewhite;
+  }
+
+  #recommendedCarousel .carousel-item{
+    gap: 1em;
+  }
+
+  .courseCard h5{
+    font-weight: 500;
+    font-size: 0.9em;
+  }
+
+  .courseCard span{
+    font-weight: 400;
+    font-size: 0.8em;
+  }
+
+  .courseCard span:nth-of-type(2){
+    font-weight: 300;
+    font-size: 0.7em;
+    text-decoration: line-through;
+  }
+
+  .infoContainer {
+    gap: 0.5em;
+  }
+
+  .infoContainer span {
+    display: inline-flex;
+        gap: 0.3em;
+  }
+
+
+  .card-body .iconClock::before, .card-body .iconStats::before, .card-body .iconBookmark::before, .card-body .iconStar::before {
+
+   font-size: 0.875em;
+
+}
+
+span.card-subtitle {
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.bottomInfo {
+    align-items: center;
+    gap: 0.3em;
+}
+
+.bottomInfo h6{
+    font-weight: 400;
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.cardAvatar {
+    border-radius: 50%;
+    width: 32px;
+    /* Cambia in base alla dimensione desiderata */
+    height: 32px;
+    overflow: hidden;
+}
+
+.cardAvatar>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bi-bookmark .hoverPath{
+    opacity: 0;
+    transform: opacity 0.3s linear;
+}
+
+.bi-bookmark:hover .hoverPath, .bi-bookmark:active .hoverPath {
+    opacity: 1;
+}
+
+
+
+  /*col-6 col-md-3*/
